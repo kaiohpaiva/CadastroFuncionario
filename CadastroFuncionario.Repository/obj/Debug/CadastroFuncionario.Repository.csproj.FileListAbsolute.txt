@@ -1,0 +1,11 @@
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Repository.dll
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Repository.pdb
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Data.dll
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Interface.dll
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Data.pdb
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\bin\Debug\CadastroFuncionario.Interface.pdb
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\obj\Debug\CadastroFuncionario.Repository.csproj.AssemblyReference.cache
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\obj\Debug\CadastroFuncionario.Repository.csproj.CoreCompileInputs.cache
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\obj\Debug\CadastroFuncionario.Repository.csproj.CopyComplete
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\obj\Debug\CadastroFuncionario.Repository.dll
+F:\GitHubKaio\Cadastrofuncionario\CadastroFuncionario.Repository\obj\Debug\CadastroFuncionario.Repository.pdb

@@ -1,0 +1,81 @@
+﻿@model List<CadastroFuncionario.Data.Model.Funcionario>
+@{
+    ViewBag.Title = "Pesquisa Funcionário";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm("PesquisaFuncionarioPorNome", "Funcionario", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+
+    <div class="container" style="border: 1px solid gray; padding: 25px;">
+
+        <div class="row">
+            <div class="col-md-2" style="padding-top: 6px;">
+                <label>Nome Funcionário</label>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" id="txtNomeFuncionario" name="txtNomeFuncionario" style="width: 100%;">
+                
+            </div>
+            <div class="col-md-2">
+                <button id="btnPesquisaFuncionario" class="btn btn-primary" type="submit">Pesquisa</button>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        ID
+                    </th>
+                    <th scope="col">
+                        Nome
+                    </th>
+                    <th scope="col">
+                        Data de Nascimento
+                    </th>
+                    <th scope="col">
+                        Salário
+                    </th>
+                    <th scope="col">
+                        Atividade
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbodyFuncionario">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.CodFuncionario</th>
+                        <th>@item.Nome</th>
+                        <th>@item.DataNascimento</th>
+                        <th>@item.Salario</th>
+                        <th>@item.Atividades</th>
+                        <th>
+                            @Html.ActionLink("Editar", "AlterarFuncionario", "Funcionario") -
+                            @*@Html.ActionLink("Excluir", "DeletarFuncionario", "Funcionario", new { id = item.CodFuncionario })*@
+                            @Html.ActionLink(
+                            linkText: "Excluir",
+                            actionName: "DeletarFuncionario",
+                            controllerName: "Funcionario",
+                            routeValues: new
+                                 {
+                                    CodFuncionario = item.CodFuncionario
+                                 },
+                            htmlAttributes: null
+                        )
+                        </th>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+}

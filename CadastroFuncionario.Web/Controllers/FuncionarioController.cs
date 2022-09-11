@@ -25,6 +25,8 @@ namespace CadastroFuncionario.Web.Controllers
 
             FuncionarioRepository repo = new FuncionarioRepository();
 
+            //teste de repositorio GITHUB
+
             var resultado = repo.BuscaFuncionario(txtNomeFuncionario);
 
             return View(resultado);
